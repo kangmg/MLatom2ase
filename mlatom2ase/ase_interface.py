@@ -1,4 +1,3 @@
-
 import numpy as np
 import mlatom as ml
 import ase
