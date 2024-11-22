@@ -5,7 +5,7 @@ import ase
 from ase.calculators.calculator import Calculator, all_changes
 from ase.units import Hartree
 
-class MLatom2Calculator(Calculator):
+class MLatomCalculator(Calculator):
     """
     ASE Calculator for AIQM & AIQM2 model using MLAtom
 
