@@ -12,7 +12,7 @@ def dft4binChecker():
     """check if dft4 is installed
     """
     try:
-        return True if subprocess.run(['dft4', '--version']).returncode == 0 else False
+        return True if subprocess.run(['dftd4', '--version']).returncode == 0 else False
     except FileNotFoundError:
         warnings.warn(
             'dft4 is not found.\nPlease install first.',
