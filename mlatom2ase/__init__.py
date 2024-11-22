@@ -4,11 +4,6 @@ from .ase_interface import MLatomCalculator
 
 # ---------- check $dft4bin ---------- #
 
-envChecker()
-dft4binChecker()
-
-# ------------------------------------ #
-
 import subprocess
 import warnings
 import os
@@ -34,3 +29,9 @@ def envChecker():
             )
         return False
     return True
+
+
+envChecker()
+dft4binChecker()
+
+# ------------------------------------ #
