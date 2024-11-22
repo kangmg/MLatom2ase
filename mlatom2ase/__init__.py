@@ -16,7 +16,7 @@ def dft4binChecker():
     except FileNotFoundError:
         warnings.warn(
             'dft4 is not found.\nPlease install first.',
-            category=ImportWarning
+            category=UserWarning
             )
         return False
 
@@ -25,13 +25,14 @@ def envChecker():
     if not dftd4bin:
         warnings.warn(
             '$dft4bin is not found.\nPlease set the environment variable: export dftd4bin=/path/to/dft4bin',
-            category=ImportWarning
+            category=UserWarning
             )
         return False
     return True
 
+warnings.simplefilter('always', UserWarning)
 
-envChecker()
 dft4binChecker()
+envChecker()
 
 # ------------------------------------ #
