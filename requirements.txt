@@ -1,0 +1,4 @@
+ase
+mlatom
+# dft4 # via conda
+
