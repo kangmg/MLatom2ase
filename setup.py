@@ -1,7 +1,7 @@
 from setuptools import setup, find_namespace_packages
 
 setup(
-    name='MLatom2ase',
+    name='mlatom2ase',
     version='0.0.1',
     author='Kang mingi',
     author_email='kangmg@korea.ac.kr',
