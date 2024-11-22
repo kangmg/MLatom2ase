@@ -4,7 +4,7 @@ __version__ = '0.0.1'
 import subprocess
 import warnings
 
-def dft4binChecker()->:
+def dft4binChecker():
   """check if dft4 is installed
   """
   try:
