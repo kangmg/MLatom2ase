@@ -72,14 +72,14 @@ class MLatomCalculator(Calculator):
 
         # mlatom molecule object
         self._convert_mlatom_molecule(atoms)
-
+        
         # calculate energy and gradients
         self._model.predict(
             molecule=self.molecule,
-            calculate_energy=True if 'energy' in properties else False,
-            calculate_energy_gradients=True if 'forces' in properties else False
+            calculate_energy=True,
+            calculate_energy_gradients=True
         )
-
+        
         # unit conversion
         # energy : Ha => eV
         # forces : Ha/Ang => eV/Ang
