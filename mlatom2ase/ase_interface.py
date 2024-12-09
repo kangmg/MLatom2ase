@@ -8,7 +8,7 @@ class MLatomCalculator(Calculator):
     """
     ASE Calculator for AIQM & AIQM2 model using MLAtom
 
-    Implements energy and force calculations with proper system change handling
+    Implements energy and force calculations
     """
     implemented_properties = ['energy', 'forces']
 
